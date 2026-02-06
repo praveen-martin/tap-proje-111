@@ -18,6 +18,11 @@ package com.project.runner;
         }
     
     @Test(priority = 1)
+        public void runCreatejobopeningPositive() {
+            runCucumberFeature("src/test/resources/com/tap-proje-111/features/CreateJobOpening_positive.feature");
+        }
+    
+    @Test(priority = 2)
         public void runOpencreatenewjobopeningfor() {
             runCucumberFeature("src/test/resources/com/tap-proje-111/features/OpenCreateNewJobOpeningFor.feature");
         }
